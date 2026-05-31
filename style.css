@@ -38,9 +38,7 @@ form {
 }
 
 input:focus{
-  outline-color: rgb(0, 81, 255);
-  opacity: 30%;
-
+  outline-color: rgba(0, 81, 255, 0.288);
 }
 
 button{
@@ -74,7 +72,7 @@ button {
   height: 35px;
   border-radius: 10px;
   border: 1px solid gainsboro;
-  color: white;
+  color: rgb(121, 121, 121);
   
 }
 
