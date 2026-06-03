@@ -2,12 +2,70 @@ html{
   background-color: aliceblue;
   background-image: linear-gradient(to right, aliceblue, rgba(0, 4, 250, 0.658));
 }
+
+
 body {
+  margin: 0;
   height: 100vh;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+.lado-esquerdo{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+h1{
+  font-size: 50px;
+  padding: 50px;
+  color:white;
+  
+}
+
+.cursor {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+}
+
+.typewriter-animation {
+  animation:
+    typewriter 3s steps(21, end) forwards,
+    blinkingCursor 0.5s infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
+@keyframes blinkingCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+
+.lado-direito{
+  flex:1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .caixa {
   width: 400px;
